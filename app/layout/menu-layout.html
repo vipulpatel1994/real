@@ -1,0 +1,24 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-balanced">
+      <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-bar>
+    <ion-nav-view name="mainContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-balanced">
+      <h1 class="title">Real Dehydrates</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item nav-clear menu-close ui-sref="home.leagues">HOME</ion-item>
+        <ion-item nav-clear menu-close ui-sref="app.products">PRODUCTS</ion-item>
+        <ion-item nav-clear menu-close ui-sref="app.standings">CERTIFICATION</ion-item>
+        <ion-item nav-clear menu-close ui-sref="app.locations">CONTACT</ion-item>
+        <ion-item nav-clear menu-close ui-sref="app.rules">ABOUT US</ion-item>
+      </ion-list>
+  </ion-side-menu>
+
+</ion-side-menus>

@@ -1,0 +1,27 @@
+<ion-view title={{vm.title}} ng-controller="TeamDetailCtrl as vm">
+    <ion-content class="has-header">
+
+        <div class="card">
+            <!--<div class="item item-button-right">
+                <h2>{{vm.title}}</h2>
+            </div>-->
+
+
+            <div class="code">
+                <div class="list card stable-bg" ng-repeat="details in vm.detailTypes">
+                    <div class="item energized-bg energized-border">
+<!--
+                        <div><img src="../../img/product/rleaf.png" width="10%" style="margin-bottom:-5px;"></div>
+-->
+                        <div><h2 style="white-space: normal;">{{ details.name }}</h2></div>
+                    </div>
+                    <div class="item item-body calm-border">
+                        <img class="full-image" src="../../img/product/{{details.imgName}}">
+                        <p class="">{{ details.detail }}</p>
+                    </div>
+                    <div class="item tabs tabs-secondary tabs-icon-left assertive-bg assertive-border" ng-if="details.size" >Size :- {{details.size}}</div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
